@@ -1,0 +1,13 @@
+[
+  "com/example/CourseSell/controller/AuthController",
+  "com/example/CourseSell/dto/AuthorizationDto",
+  "com/example/CourseSell/dto/AuthorizationDto$AuthorizationDtoBuilder",
+  "com/example/CourseSell/dto/TokenDto",
+  "com/example/CourseSell/dto/TokenDto$TokenDtoBuilder",
+  "com/example/CourseSell/dto/UserDto",
+  "com/example/CourseSell/dto/UserDto$UserDtoBuilder",
+  "com/example/CourseSell/repository/UserRepository",
+  "com/example/CourseSell/service/implement/AuthServiceImpl",
+  "com/example/CourseSell/service/implement/JwtServiceImpl",
+  "com/example/CourseSell/service/implement/UserServiceImpl"
+]

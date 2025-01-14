@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/payment/createPayment/{userId}",
+    "parameters": "()",
+    "status": 200
+  }
+]

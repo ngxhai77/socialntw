@@ -1,0 +1,7 @@
+[
+  "com/example/CourseSell/config",
+  "com/example/CourseSell/controller",
+  "com/example/CourseSell/entity",
+  "com/example/CourseSell/repository",
+  "com/example/CourseSell/service/implement"
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/cart/getCart/{userId}",
+    "parameters": "()",
+    "status": 200
+  }
+]

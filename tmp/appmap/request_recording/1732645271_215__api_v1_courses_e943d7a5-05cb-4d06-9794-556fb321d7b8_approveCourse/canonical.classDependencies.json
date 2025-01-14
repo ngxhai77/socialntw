@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "POST /api/v1/courses/{courseId}/approveCourse",
+    "callee": "com/example"
+  },
+  {
+    "caller": "com/example",
+    "callee": "POST /api/v1/courses/{courseId}/approveCourse"
+  },
+  {
+    "caller": "com/example",
+    "callee": "select c1_0.id,c1_0.created_at,c1_0.description,c1_0.is_approved,c1_0.price,c1_0.time_needed,c1_0.title,c1_0.update_at,u1_0.id,c2_0.id,c2_0.created_at,c2_0.total_price,c2_0.update_at,c2_0.student_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from courses c1_0 left join users u1_0 on u1_0.id=c1_0.instructor_id left join cart c2_0 on c2_0.id=u1_0.cart_id where c1_0.id=?"
+  },
+  {
+    "caller": "com/example",
+    "callee": "update courses set description=?,is_approved=?,price=?,time_needed=?,title=?,update_at=?,instructor_id=? where id=?"
+  }
+]

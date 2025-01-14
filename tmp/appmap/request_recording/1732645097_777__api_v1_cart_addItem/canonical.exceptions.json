@@ -1,0 +1,23 @@
+[
+  {
+    "class": "com.example.CourseSell.exception.BadRequestException",
+    "message": "Course already exist in cart ",
+    "stack": [
+      "CartServiceImpl.java:90",
+      "src/main/java/com/example/CourseSell/controller/CartController.java:33",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "CartServiceImpl.java:90"
+  },
+  {
+    "class": "com.example.CourseSell.exception.BadRequestException",
+    "message": "Course already exist in cart ",
+    "stack": [
+      "CartServiceImpl.java:90",
+      "src/main/java/com/example/CourseSell/service/implement/CartServiceImpl.java:71",
+      "src/main/java/com/example/CourseSell/controller/CartController.java:33",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "CartServiceImpl.java:90"
+  }
+]

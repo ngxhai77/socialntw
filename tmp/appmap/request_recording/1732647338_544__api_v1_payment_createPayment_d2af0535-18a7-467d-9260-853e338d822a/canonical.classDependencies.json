@@ -1,0 +1,22 @@
+[
+  {
+    "caller": "GET /api/v1/payment/createPayment/{userId}",
+    "callee": "com/example"
+  },
+  {
+    "caller": "com/example",
+    "callee": "GET /api/v1/payment/createPayment/{userId}"
+  },
+  {
+    "caller": "com/example",
+    "callee": "select c1_0.id,c1_0.created_at,c1_0.total_price,c1_0.update_at,c1_0.student_id from cart c1_0 where c1_0.student_id=?"
+  },
+  {
+    "caller": "com/example",
+    "callee": "select ci1_0.cart_id,ci1_0.id,c2_0.id,c2_0.created_at,c2_0.description,c2_0.is_approved,c2_0.price,c2_0.time_needed,c2_0.title,c2_0.update_at,u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type,ci1_0.created_at,ci1_0.is_chosen,ci1_0.update_at from cart_item ci1_0 left join courses c2_0 on c2_0.id=ci1_0.course_id left join users u1_0 on u1_0.id=c2_0.instructor_id where ci1_0.cart_id=?"
+  },
+  {
+    "caller": "com/example",
+    "callee": "select u1_0.id,c1_0.id,c1_0.created_at,c1_0.total_price,c1_0.update_at,c1_0.student_id,u2_0.id,u2_0.cart_id,u2_0.created_at,u2_0.email,u2_0.full_name,u2_0.is_active,u2_0.password,u2_0.phone,u2_0.refresh_token,u2_0.update_at,u2_0.user_type,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 left join cart c1_0 on c1_0.id=u1_0.cart_id left join users u2_0 on u2_0.id=c1_0.student_id where u1_0.id=?"
+  }
+]

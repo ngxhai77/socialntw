@@ -1,0 +1,1162 @@
+{
+  "events": [
+    {
+      "defined_class": "com.example.CourseSell.config.JwtAuthenticationFilter",
+      "event": "call",
+      "id": 1,
+      "lineno": 35,
+      "method_id": "doFilterInternal",
+      "parameters": [
+        {
+          "class": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 725262605,
+          "value": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@2b3aa10d"
+        },
+        {
+          "class": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse",
+          "kind": "req",
+          "name": "response",
+          "object_id": 254206850,
+          "value": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse@f26e382"
+        },
+        {
+          "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+          "kind": "req",
+          "name": "filterChain",
+          "object_id": 1223647329,
+          "value": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain@48ef6061"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java",
+      "receiver": {
+        "class": "com.example.CourseSell.config.JwtAuthenticationFilter",
+        "object_id": 1891047080,
+        "value": "com.example.CourseSell.config.JwtAuthenticationFilter@70b716a8"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "content-length": "88",
+          "postman-token": "74e02594-39c6-465c-ba18-a6731eccc293",
+          "host": "localhost:8080",
+          "content-type": "application/json",
+          "connection": "keep-alive",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "PostmanRuntime/7.43.0",
+          "accept": "*/*"
+        },
+        "normalized_path_info": "/api/v1/auth/login",
+        "path_info": "/api/v1/auth/login",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 2,
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.controller.AuthController",
+      "event": "call",
+      "id": 3,
+      "lineno": 32,
+      "method_id": "login",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.dto.LoginDto",
+          "kind": "req",
+          "name": "loginDto",
+          "object_id": 1548262481,
+          "value": "LoginDto(email=new@gmail.com, password=new)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/controller/AuthController.java",
+      "receiver": {
+        "class": "com.example.CourseSell.controller.AuthController",
+        "object_id": 902161605,
+        "value": "com.example.CourseSell.controller.AuthController@35c5e4c5"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.AuthServiceImpl",
+      "event": "call",
+      "id": 4,
+      "lineno": 47,
+      "method_id": "login",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.dto.LoginDto",
+          "kind": "req",
+          "name": "loginDto",
+          "object_id": 1548262481,
+          "value": "LoginDto(email=new@gmail.com, password=new)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/AuthServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.AuthServiceImpl",
+        "object_id": 1228156855,
+        "value": "com.example.CourseSell.service.implement.AuthServiceImpl@49342fb7"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.UserServiceImpl",
+      "event": "call",
+      "id": 5,
+      "lineno": 214,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "email",
+          "object_id": 570719260,
+          "value": "new@gmail.com"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/UserServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.UserServiceImpl",
+        "object_id": 695361920,
+        "value": "com.example.CourseSell.service.implement.UserServiceImpl@29726180"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.repository.UserRepository",
+      "event": "call",
+      "id": 6,
+      "lineno": -1,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 570719260,
+          "value": "new@gmail.com"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/repository/UserRepository.java",
+      "receiver": {
+        "class": "jdk.proxy2.$Proxy199",
+        "object_id": 1100579344,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@324255d5"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "event": "call",
+      "id": 7,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "select u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 where u1_0.email=?"
+      },
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00009988,
+      "event": "return",
+      "id": 8,
+      "parent_id": 7,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00044593,
+      "event": "return",
+      "id": 9,
+      "parent_id": 6,
+      "return_value": {
+        "class": "java.util.Optional",
+        "object_id": 1725923144,
+        "value": "Optional[User(password=$2a$10$05jjXq0xUVLlkcSW0d.mQ.cYbCr2p/3rv9o.aQkZ6YEDzRxcJgp/., email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT, isActive=true, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDUyODUsImV4cCI6MTczMzI1MDA4NX0.r-0UaOrriaL52P-nPFebUSnu1NaGU1wHd5wrEvg-0f4, courses=[], bills=[], cart=null)]"
+      },
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00044593,
+      "event": "return",
+      "id": 10,
+      "parent_id": 5,
+      "return_value": {
+        "class": "java.util.Optional",
+        "object_id": 1725923144,
+        "value": "Optional[User(password=$2a$10$05jjXq0xUVLlkcSW0d.mQ.cYbCr2p/3rv9o.aQkZ6YEDzRxcJgp/., email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT, isActive=true, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDUyODUsImV4cCI6MTczMzI1MDA4NX0.r-0UaOrriaL52P-nPFebUSnu1NaGU1wHd5wrEvg-0f4, courses=[], bills=[], cart=null)]"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 11,
+      "lineno": 34,
+      "method_id": "generateAccessToken",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.entity.User",
+          "kind": "req",
+          "name": "user",
+          "object_id": 1436473283,
+          "value": "User(password=$2a$10$05jjXq0xUVLlkcSW0d.mQ.cYbCr2p/3rv9o.aQkZ6YEDzRxcJgp/., email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT, isActive=true, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDUyODUsImV4cCI6MTczMzI1MDA4NX0.r-0UaOrriaL52P-nPFebUSnu1NaGU1wHd5wrEvg-0f4, courses=[], bills=[], cart=null)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00010497,
+      "event": "return",
+      "id": 12,
+      "parent_id": 11,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 1418850629,
+        "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 13,
+      "lineno": 50,
+      "method_id": "generateRefreshToken",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.entity.User",
+          "kind": "req",
+          "name": "user",
+          "object_id": 1436473283,
+          "value": "User(password=$2a$10$05jjXq0xUVLlkcSW0d.mQ.cYbCr2p/3rv9o.aQkZ6YEDzRxcJgp/., email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT, isActive=true, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDUyODUsImV4cCI6MTczMzI1MDA4NX0.r-0UaOrriaL52P-nPFebUSnu1NaGU1wHd5wrEvg-0f4, courses=[], bills=[], cart=null)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 14,
+      "parent_id": 13,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 1966025136,
+        "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.UserServiceImpl",
+      "event": "call",
+      "id": 15,
+      "lineno": 241,
+      "method_id": "saveUser",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.entity.User",
+          "kind": "req",
+          "name": "user",
+          "object_id": 1436473283,
+          "value": "User(password=$2a$10$05jjXq0xUVLlkcSW0d.mQ.cYbCr2p/3rv9o.aQkZ6YEDzRxcJgp/., email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT, isActive=true, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM, courses=[], bills=[], cart=null)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/UserServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.UserServiceImpl",
+        "object_id": 695361920,
+        "value": "com.example.CourseSell.service.implement.UserServiceImpl@29726180"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "event": "call",
+      "id": 16,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "update users set cart_id=?,email=?,full_name=?,is_active=?,password=?,phone=?,refresh_token=?,update_at=?,user_type=? where id=?"
+      },
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 17,
+      "parent_id": 16,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00185399,
+      "event": "return",
+      "id": 18,
+      "parent_id": 15,
+      "return_value": {
+        "class": "com.example.CourseSell.entity.User",
+        "object_id": 1436473283,
+        "value": "User(password=$2a$10$05jjXq0xUVLlkcSW0d.mQ.cYbCr2p/3rv9o.aQkZ6YEDzRxcJgp/., email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT, isActive=true, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM, courses=[], bills=[], cart=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto",
+      "event": "call",
+      "id": 19,
+      "lineno": 10,
+      "method_id": "builder",
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "static": true,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 20,
+      "parent_id": 19,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=null, password=null, confirmPassword=null, email=null, phone=null, fullName=null, userType=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+      "event": "call",
+      "id": 21,
+      "lineno": 10,
+      "method_id": "id",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "id",
+          "object_id": 959547142,
+          "value": "d2af0535-18a7-467d-9260-853e338d822a"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=null, phone=null, fullName=null, userType=null)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 22,
+      "parent_id": 21,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=null, phone=null, fullName=null, userType=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+      "event": "call",
+      "id": 23,
+      "lineno": 10,
+      "method_id": "email",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "email",
+          "object_id": 452961012,
+          "value": "new@gmail.com"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=null, userType=null)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 24,
+      "parent_id": 23,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=null, userType=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+      "event": "call",
+      "id": 25,
+      "lineno": 10,
+      "method_id": "userType",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.enums.UserType",
+          "kind": "req",
+          "name": "userType",
+          "object_id": 1254608787,
+          "value": "STUDENT"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=null, userType=STUDENT)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 26,
+      "parent_id": 25,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=null, userType=STUDENT)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+      "event": "call",
+      "id": 27,
+      "lineno": 10,
+      "method_id": "fullName",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "fullName",
+          "object_id": 1894768166,
+          "value": "xuanhai"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 28,
+      "parent_id": 27,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+      "event": "call",
+      "id": 29,
+      "lineno": 10,
+      "method_id": "phone",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "phone",
+          "object_id": 0
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 30,
+      "parent_id": 29,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+      "event": "call",
+      "id": 31,
+      "lineno": 10,
+      "method_id": "build",
+      "path": "src/main/java/com/example/CourseSell/dto/UserDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.UserDto$UserDtoBuilder",
+        "object_id": 1360328849,
+        "value": "UserDto.UserDtoBuilder(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 32,
+      "parent_id": 31,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.UserDto",
+        "object_id": 113860826,
+        "value": "UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.TokenDto",
+      "event": "call",
+      "id": 33,
+      "lineno": 9,
+      "method_id": "builder",
+      "path": "src/main/java/com/example/CourseSell/dto/TokenDto.java",
+      "static": true,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 34,
+      "parent_id": 33,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+        "object_id": 871751346,
+        "value": "TokenDto.TokenDtoBuilder(accessToken=null, refreshToken=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+      "event": "call",
+      "id": 35,
+      "lineno": 9,
+      "method_id": "accessToken",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "accessToken",
+          "object_id": 1418850629,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/TokenDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+        "object_id": 871751346,
+        "value": "TokenDto.TokenDtoBuilder(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=null)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 36,
+      "parent_id": 35,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+        "object_id": 871751346,
+        "value": "TokenDto.TokenDtoBuilder(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+      "event": "call",
+      "id": 37,
+      "lineno": 9,
+      "method_id": "refreshToken",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "refreshToken",
+          "object_id": 1966025136,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/TokenDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+        "object_id": 871751346,
+        "value": "TokenDto.TokenDtoBuilder(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 38,
+      "parent_id": 37,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+        "object_id": 871751346,
+        "value": "TokenDto.TokenDtoBuilder(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+      "event": "call",
+      "id": 39,
+      "lineno": 9,
+      "method_id": "build",
+      "path": "src/main/java/com/example/CourseSell/dto/TokenDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.TokenDto$TokenDtoBuilder",
+        "object_id": 871751346,
+        "value": "TokenDto.TokenDtoBuilder(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 40,
+      "parent_id": 39,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.TokenDto",
+        "object_id": 1425683002,
+        "value": "TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.AuthorizationDto",
+      "event": "call",
+      "id": 41,
+      "lineno": 8,
+      "method_id": "builder",
+      "path": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java",
+      "static": true,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 42,
+      "parent_id": 41,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+        "object_id": 1516951661,
+        "value": "AuthorizationDto.AuthorizationDtoBuilder(token=null, user=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+      "event": "call",
+      "id": 43,
+      "lineno": 8,
+      "method_id": "token",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.dto.TokenDto",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1425683002,
+          "value": "TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+        "object_id": 1516951661,
+        "value": "AuthorizationDto.AuthorizationDtoBuilder(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=null)"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 44,
+      "parent_id": 43,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+        "object_id": 1516951661,
+        "value": "AuthorizationDto.AuthorizationDtoBuilder(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=null)"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+      "event": "call",
+      "id": 45,
+      "lineno": 8,
+      "method_id": "user",
+      "parameters": [
+        {
+          "class": "com.example.CourseSell.dto.UserDto",
+          "kind": "req",
+          "name": "user",
+          "object_id": 113860826,
+          "value": "UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT)"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+        "object_id": 1516951661,
+        "value": "AuthorizationDto.AuthorizationDtoBuilder(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT))"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 46,
+      "parent_id": 45,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+        "object_id": 1516951661,
+        "value": "AuthorizationDto.AuthorizationDtoBuilder(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT))"
+      },
+      "thread_id": 48
+    },
+    {
+      "defined_class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+      "event": "call",
+      "id": 47,
+      "lineno": 8,
+      "method_id": "build",
+      "path": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java",
+      "receiver": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto$AuthorizationDtoBuilder",
+        "object_id": 1516951661,
+        "value": "AuthorizationDto.AuthorizationDtoBuilder(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT))"
+      },
+      "static": false,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 48,
+      "parent_id": 47,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto",
+        "object_id": 401124426,
+        "value": "AuthorizationDto(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT))"
+      },
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.0091069,
+      "event": "return",
+      "id": 49,
+      "parent_id": 4,
+      "return_value": {
+        "class": "com.example.CourseSell.dto.AuthorizationDto",
+        "object_id": 401124426,
+        "value": "AuthorizationDto(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT))"
+      },
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.0091069,
+      "event": "return",
+      "id": 50,
+      "parent_id": 3,
+      "return_value": {
+        "class": "org.springframework.http.ResponseEntity",
+        "object_id": 175497291,
+        "value": "<202 ACCEPTED Accepted,ApiResponse(statusCode=202, message=Successfully, data=AuthorizationDto(token=TokenDto(accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidXNlcl90eXBlIjoiU1RVREVOVCIsInR5cGUiOiJhY2Nlc3MiLCJpZCI6ImQyYWYwNTM1LTE4YTctNDY3ZC05MjYwLTg1M2UzMzhkODIyYSIsImlhdCI6MTczMjY0NTU5OSwiZXhwIjoxNzMyNjQ2NDk5fQ.Zh5NZiuY4QWICXT5Mkjxg-l9zDVC6WCaaaUFpE_PCKI, refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdAZ21haWwuY29tIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3MzI2NDU1OTksImV4cCI6MTczMzI1MDM5OX0.L1B5b9CYhudvAFaF32UQbHorgrBoVPqaiBXvvOulnLM), user=UserDto(id=d2af0535-18a7-467d-9260-853e338d822a, password=null, confirmPassword=null, email=new@gmail.com, phone=null, fullName=xuanhai, userType=STUDENT))),[]>"
+      },
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00941947,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "X-Frame-Options": "DENY",
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+          "X-Content-Type-Options": "nosniff",
+          "Connection": "keep-alive",
+          "Vary": "Origin",
+          "Pragma": "no-cache",
+          "Expires": "0",
+          "X-XSS-Protection": "0",
+          "Date": "Tue, 26 Nov 2024 18:26:39 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 202
+      },
+      "id": 51,
+      "parent_id": 2,
+      "thread_id": 48
+    },
+    {
+      "elapsed": 0.00951999,
+      "event": "return",
+      "id": 52,
+      "parent_id": 1,
+      "thread_id": 48
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /api/v1/auth/login (202) - 01:26:39.032",
+    "app": "CourseSell",
+    "language": {
+      "name": "java",
+      "version": "21.0.3+7-LTS-152",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {},
+    "git": {
+      "repository": "https://github.com/Idol1023/CourseSell.git",
+      "branch": "feature/ecommerce-190",
+      "commit": "ea9100a02c00a4efc624bd2d32c12777b18051e3"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "login",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/AuthServiceImpl.java:47"
+                            }
+                          ],
+                          "name": "AuthServiceImpl",
+                          "type": "class"
+                        },
+                        {
+                          "children": [
+                            {
+                              "name": "saveUser",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/UserServiceImpl.java:241"
+                            },
+                            {
+                              "name": "findByEmail",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/UserServiceImpl.java:214"
+                            }
+                          ],
+                          "name": "UserServiceImpl",
+                          "type": "class"
+                        },
+                        {
+                          "children": [
+                            {
+                              "name": "generateAccessToken",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:34"
+                            },
+                            {
+                              "name": "generateRefreshToken",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:50"
+                            }
+                          ],
+                          "name": "JwtServiceImpl",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "implement",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "service",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "findByEmail",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/repository/UserRepository.java:-1"
+                        }
+                      ],
+                      "name": "UserRepository",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "repository",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "login",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/controller/AuthController.java:32"
+                        }
+                      ],
+                      "name": "AuthController",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "controller",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "fullName",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        },
+                        {
+                          "name": "userType",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        },
+                        {
+                          "name": "phone",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        },
+                        {
+                          "name": "email",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        },
+                        {
+                          "name": "id",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        },
+                        {
+                          "name": "build",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        }
+                      ],
+                      "name": "UserDto$UserDtoBuilder",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "user",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java:8"
+                        },
+                        {
+                          "name": "token",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java:8"
+                        },
+                        {
+                          "name": "build",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java:8"
+                        }
+                      ],
+                      "name": "AuthorizationDto$AuthorizationDtoBuilder",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "builder",
+                          "type": "function",
+                          "static": true,
+                          "location": "src/main/java/com/example/CourseSell/dto/UserDto.java:10"
+                        }
+                      ],
+                      "name": "UserDto",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "builder",
+                          "type": "function",
+                          "static": true,
+                          "location": "src/main/java/com/example/CourseSell/dto/TokenDto.java:9"
+                        }
+                      ],
+                      "name": "TokenDto",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "builder",
+                          "type": "function",
+                          "static": true,
+                          "location": "src/main/java/com/example/CourseSell/dto/AuthorizationDto.java:8"
+                        }
+                      ],
+                      "name": "AuthorizationDto",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "accessToken",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/TokenDto.java:9"
+                        },
+                        {
+                          "name": "build",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/TokenDto.java:9"
+                        },
+                        {
+                          "name": "refreshToken",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/dto/TokenDto.java:9"
+                        }
+                      ],
+                      "name": "TokenDto$TokenDtoBuilder",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "dto",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "doFilterInternal",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+                        }
+                      ],
+                      "name": "JwtAuthenticationFilter",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "config",
+                  "type": "package"
+                }
+              ],
+              "name": "CourseSell",
+              "type": "package"
+            }
+          ],
+          "name": "example",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/v1/auth/login"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "select u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 where u1_0.email=?"
+        },
+        {
+          "type": "query",
+          "name": "update users set cart_id=?,email=?,full_name=?,is_active=?,password=?,phone=?,refresh_token=?,update_at=?,user_type=? where id=?"
+        }
+      ]
+    }
+  ]
+}

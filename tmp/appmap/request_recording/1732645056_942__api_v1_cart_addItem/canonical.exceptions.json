@@ -1,0 +1,32 @@
+[
+  {
+    "class": "io.jsonwebtoken.security.SignatureException",
+    "message": "JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.",
+    "stack": [
+      "DefaultJwtParser.java:399",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "DefaultJwtParser.java:399"
+  },
+  {
+    "class": "io.jsonwebtoken.security.SignatureException",
+    "message": "JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.",
+    "stack": [
+      "DefaultJwtParser.java:399",
+      "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "DefaultJwtParser.java:399"
+  },
+  {
+    "class": "io.jsonwebtoken.security.SignatureException",
+    "message": "JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.",
+    "stack": [
+      "DefaultJwtParser.java:399",
+      "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:68",
+      "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "DefaultJwtParser.java:399"
+  }
+]

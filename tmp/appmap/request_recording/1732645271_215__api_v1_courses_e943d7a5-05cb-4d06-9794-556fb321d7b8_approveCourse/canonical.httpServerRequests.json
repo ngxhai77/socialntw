@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/v1/courses/{courseId}/approveCourse",
+    "parameters": "()",
+    "status": 200
+  }
+]

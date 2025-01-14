@@ -1,0 +1,254 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "findByEmail",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/example/CourseSell/repository/UserRepository.java:-1"
+                      }
+                    ],
+                    "name": "UserRepository",
+                    "type": "class"
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "findByUser",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/example/CourseSell/repository/BillRepository.java:-1"
+                      }
+                    ],
+                    "name": "BillRepository",
+                    "type": "class"
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "findByUserId",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/example/CourseSell/repository/CartRepository.java:-1"
+                      }
+                    ],
+                    "name": "CartRepository",
+                    "type": "class"
+                  }
+                ],
+                "name": "repository",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "extractClaim",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:68"
+                          },
+                          {
+                            "name": "extractUsername",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64"
+                          },
+                          {
+                            "name": "isTokenValid",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:73"
+                          },
+                          {
+                            "name": "isTokenOfType",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:97"
+                          }
+                        ],
+                        "name": "JwtServiceImpl",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "hasUserBoughtChosenItems",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/CartServiceImpl.java:159"
+                          },
+                          {
+                            "name": "getTotalPriceByUserId",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/CartServiceImpl.java:130"
+                          }
+                        ],
+                        "name": "CartServiceImpl",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "hasPurchasedCourse",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/CoursePurchaseServiceImpl.java:53"
+                          }
+                        ],
+                        "name": "CoursePurchaseServiceImpl",
+                        "type": "class"
+                      },
+                      {
+                        "children": [
+                          {
+                            "name": "createPayment",
+                            "type": "function",
+                            "static": false,
+                            "location": "src/main/java/com/example/CourseSell/service/implement/PaymentServiceImpl.java:32"
+                          }
+                        ],
+                        "name": "PaymentServiceImpl",
+                        "type": "class"
+                      }
+                    ],
+                    "name": "implement",
+                    "type": "package"
+                  }
+                ],
+                "name": "service",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "getRandomNumber",
+                        "type": "function",
+                        "static": true,
+                        "location": "src/main/java/com/example/CourseSell/config/VNPAYConfig.java:118"
+                      },
+                      {
+                        "name": "hmacSHA512",
+                        "type": "function",
+                        "static": true,
+                        "location": "src/main/java/com/example/CourseSell/config/VNPAYConfig.java:84"
+                      }
+                    ],
+                    "name": "VNPAYConfig",
+                    "type": "class"
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "doFilterInternal",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+                      }
+                    ],
+                    "name": "JwtAuthenticationFilter",
+                    "type": "class"
+                  }
+                ],
+                "name": "config",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "calculateTotalPrice",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/example/CourseSell/entity/Cart.java:32"
+                      }
+                    ],
+                    "name": "Cart",
+                    "type": "class"
+                  }
+                ],
+                "name": "entity",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "createPayment",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/example/CourseSell/controller/PaymentController.java:26"
+                      }
+                    ],
+                    "name": "PaymentController",
+                    "type": "class"
+                  }
+                ],
+                "name": "controller",
+                "type": "package"
+              }
+            ],
+            "name": "CourseSell",
+            "type": "package"
+          }
+        ],
+        "name": "example",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 where u1_0.email=?"
+      },
+      {
+        "type": "query",
+        "name": "select c1_0.id,c1_0.created_at,c1_0.total_price,c1_0.update_at,c1_0.student_id from cart c1_0 where c1_0.student_id=?"
+      },
+      {
+        "type": "query",
+        "name": "select u1_0.id,c1_0.id,c1_0.created_at,c1_0.total_price,c1_0.update_at,c1_0.student_id,u2_0.id,u2_0.cart_id,u2_0.created_at,u2_0.email,u2_0.full_name,u2_0.is_active,u2_0.password,u2_0.phone,u2_0.refresh_token,u2_0.update_at,u2_0.user_type,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 left join cart c1_0 on c1_0.id=u1_0.cart_id left join users u2_0 on u2_0.id=c1_0.student_id where u1_0.id=?"
+      },
+      {
+        "type": "query",
+        "name": "select ci1_0.cart_id,ci1_0.id,c2_0.id,c2_0.created_at,c2_0.description,c2_0.is_approved,c2_0.price,c2_0.time_needed,c2_0.title,c2_0.update_at,u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type,ci1_0.created_at,ci1_0.is_chosen,ci1_0.update_at from cart_item ci1_0 left join courses c2_0 on c2_0.id=ci1_0.course_id left join users u1_0 on u1_0.id=c2_0.instructor_id where ci1_0.cart_id=?"
+      },
+      {
+        "type": "query",
+        "name": "select b1_0.id,b1_0.bank_code,b1_0.bill_date,b1_0.created_at,b1_0.order_info,b1_0.res_code,b1_0.status,b1_0.total_amount,b1_0.update_at,b1_0.student_id from bills b1_0 where b1_0.student_id=?"
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /api/v1/payment/createPayment/{userId}"
+      }
+    ]
+  }
+]

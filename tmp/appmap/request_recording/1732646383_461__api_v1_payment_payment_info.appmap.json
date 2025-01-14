@@ -1,0 +1,237 @@
+{
+  "events": [
+    {
+      "defined_class": "com.example.CourseSell.config.JwtAuthenticationFilter",
+      "event": "call",
+      "id": 1,
+      "lineno": 35,
+      "method_id": "doFilterInternal",
+      "parameters": [
+        {
+          "class": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 1575307,
+          "value": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@18098b"
+        },
+        {
+          "class": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse",
+          "kind": "req",
+          "name": "response",
+          "object_id": 941525486,
+          "value": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse@381e89ee"
+        },
+        {
+          "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+          "kind": "req",
+          "name": "filterChain",
+          "object_id": 1200103179,
+          "value": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain@47881f0b"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java",
+      "receiver": {
+        "class": "com.example.CourseSell.config.JwtAuthenticationFilter",
+        "object_id": 1891047080,
+        "value": "com.example.CourseSell.config.JwtAuthenticationFilter@70b716a8"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 2,
+      "lineno": 64,
+      "method_id": "extractUsername",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 2032498814,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHVkZW50QGdtYWlsLmNvbSIsInVzZXJfdHlwZSI6IlNUVURFTlQiLCJ0eXBlIjoiYWNjZXNzIiwiaWQiOiI2MmM1NWU3OC0wZWE4LTQ4MTItODAxNC02MGU0ZmNkYTA3Y2IiLCJpYXQiOjE3MjI5OTkwMDcsImV4cCI6MTcyMjk5OTkwN30.zjHLHjXNJ82zooOARVC-OyGw0Kdx5yNtvkzHk8m-SW0"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 3,
+      "lineno": 68,
+      "method_id": "extractClaim",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 2032498814,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHVkZW50QGdtYWlsLmNvbSIsInVzZXJfdHlwZSI6IlNUVURFTlQiLCJ0eXBlIjoiYWNjZXNzIiwiaWQiOiI2MmM1NWU3OC0wZWE4LTQ4MTItODAxNC02MGU0ZmNkYTA3Y2IiLCJpYXQiOjE3MjI5OTkwMDcsImV4cCI6MTcyMjk5OTkwN30.zjHLHjXNJ82zooOARVC-OyGw0Kdx5yNtvkzHk8m-SW0"
+        },
+        {
+          "class": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5c6ec78",
+          "kind": "req",
+          "name": "claimsResolver",
+          "object_id": 1917247068,
+          "value": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5c6ec78@7246de5c"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00025742,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "io.jsonwebtoken.ExpiredJwtException",
+          "lineno": 427,
+          "message": "JWT expired at 2024-08-07T03:05:07Z. Current time: 2024-11-26T18:39:43Z, a difference of 9646476465 milliseconds.  Allowed clock skew: 0 milliseconds.",
+          "object_id": 1608604341,
+          "path": "DefaultJwtParser.java"
+        }
+      ],
+      "id": 4,
+      "parent_id": 3,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00025742,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "io.jsonwebtoken.ExpiredJwtException",
+          "lineno": 427,
+          "message": "JWT expired at 2024-08-07T03:05:07Z. Current time: 2024-11-26T18:39:43Z, a difference of 9646476465 milliseconds.  Allowed clock skew: 0 milliseconds.",
+          "object_id": 1608604341,
+          "path": "DefaultJwtParser.java"
+        }
+      ],
+      "id": 5,
+      "parent_id": 2,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00025742,
+      "event": "return",
+      "exceptions": [
+        {
+          "class": "io.jsonwebtoken.ExpiredJwtException",
+          "lineno": 427,
+          "message": "JWT expired at 2024-08-07T03:05:07Z. Current time: 2024-11-26T18:39:43Z, a difference of 9646476465 milliseconds.  Allowed clock skew: 0 milliseconds.",
+          "object_id": 1608604341,
+          "path": "DefaultJwtParser.java"
+        }
+      ],
+      "id": 6,
+      "parent_id": 1,
+      "thread_id": 52
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "GET /api/v1/payment/payment_info (UNKNOWN) - 01:39:43.461",
+    "app": "CourseSell",
+    "language": {
+      "name": "java",
+      "version": "21.0.3+7-LTS-152",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {},
+    "git": {
+      "repository": "https://github.com/Idol1023/CourseSell.git",
+      "branch": "feature/ecommerce-190",
+      "commit": "ea9100a02c00a4efc624bd2d32c12777b18051e3"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "extractClaim",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:68"
+                            },
+                            {
+                              "name": "extractUsername",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64"
+                            }
+                          ],
+                          "name": "JwtServiceImpl",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "implement",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "service",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "doFilterInternal",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+                        }
+                      ],
+                      "name": "JwtAuthenticationFilter",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "config",
+                  "type": "package"
+                }
+              ],
+              "name": "CourseSell",
+              "type": "package"
+            }
+          ],
+          "name": "example",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    }
+  ]
+}

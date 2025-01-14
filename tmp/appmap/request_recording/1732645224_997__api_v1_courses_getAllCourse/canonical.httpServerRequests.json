@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/courses/getAllCourse",
+    "parameters": "()",
+    "status": 200
+  }
+]

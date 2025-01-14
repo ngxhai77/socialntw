@@ -1,0 +1,32 @@
+[
+  {
+    "class": "io.jsonwebtoken.ExpiredJwtException",
+    "message": "JWT expired at 2024-11-26T18:41:39Z. Current time: 2024-11-26T18:46:17Z, a difference of 278389 milliseconds.  Allowed clock skew: 0 milliseconds.",
+    "stack": [
+      "DefaultJwtParser.java:427",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "DefaultJwtParser.java:427"
+  },
+  {
+    "class": "io.jsonwebtoken.ExpiredJwtException",
+    "message": "JWT expired at 2024-11-26T18:41:39Z. Current time: 2024-11-26T18:46:17Z, a difference of 278389 milliseconds.  Allowed clock skew: 0 milliseconds.",
+    "stack": [
+      "DefaultJwtParser.java:427",
+      "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "DefaultJwtParser.java:427"
+  },
+  {
+    "class": "io.jsonwebtoken.ExpiredJwtException",
+    "message": "JWT expired at 2024-11-26T18:41:39Z. Current time: 2024-11-26T18:46:17Z, a difference of 278389 milliseconds.  Allowed clock skew: 0 milliseconds.",
+    "stack": [
+      "DefaultJwtParser.java:427",
+      "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:68",
+      "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64",
+      "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+    ],
+    "location": "DefaultJwtParser.java:427"
+  }
+]

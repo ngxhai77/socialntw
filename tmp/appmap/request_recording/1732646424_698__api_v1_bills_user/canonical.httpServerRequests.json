@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/bills/user",
+    "parameters": "()",
+    "status": 200
+  }
+]

@@ -1,0 +1,7 @@
+[
+  "claimsResolver",
+  "filterChain",
+  "request",
+  "response",
+  "token"
+]

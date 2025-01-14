@@ -1,0 +1,6 @@
+[
+  "select c1_0.id,c1_0.created_at,c1_0.description,c1_0.is_approved,c1_0.price,c1_0.time_needed,c1_0.title,c1_0.update_at,c1_0.instructor_id from courses c1_0",
+  "select m1_0.course_id,m1_0.id,m1_0.created_at,m1_0.description,m1_0.order_index,m1_0.title,m1_0.update_at from course_materials m1_0 where m1_0.course_id=?",
+  "select s1_0.course_id,s1_1.id,s1_1.created_at,s1_1.description,s1_1.subject_name,s1_1.update_at from course_subject s1_0 join subjects s1_1 on s1_1.id=s1_0.subject_id where s1_0.course_id=?",
+  "select u1_0.id,c1_0.id,c1_0.created_at,c1_0.total_price,c1_0.update_at,c1_0.student_id,u2_0.id,u2_0.cart_id,u2_0.created_at,u2_0.email,u2_0.full_name,u2_0.is_active,u2_0.password,u2_0.phone,u2_0.refresh_token,u2_0.update_at,u2_0.user_type,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 left join cart c1_0 on c1_0.id=u1_0.cart_id left join users u2_0 on u2_0.id=c1_0.student_id where u1_0.id=?"
+]

@@ -1,0 +1,6 @@
+[
+  "com/example/CourseSell/controller",
+  "com/example/CourseSell/enums",
+  "com/example/CourseSell/repository",
+  "com/example/CourseSell/service/implement"
+]

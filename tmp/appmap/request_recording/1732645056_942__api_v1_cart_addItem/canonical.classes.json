@@ -1,0 +1,4 @@
+[
+  "com/example/CourseSell/config/JwtAuthenticationFilter",
+  "com/example/CourseSell/service/implement/JwtServiceImpl"
+]

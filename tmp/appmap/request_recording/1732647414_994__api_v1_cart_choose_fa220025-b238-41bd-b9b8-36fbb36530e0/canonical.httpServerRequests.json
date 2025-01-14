@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/v1/cart/choose/{cartItemId}",
+    "parameters": "()",
+    "status": 200
+  }
+]

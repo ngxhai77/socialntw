@@ -1,0 +1,713 @@
+{
+  "events": [
+    {
+      "defined_class": "com.example.CourseSell.config.JwtAuthenticationFilter",
+      "event": "call",
+      "id": 1,
+      "lineno": 35,
+      "method_id": "doFilterInternal",
+      "parameters": [
+        {
+          "class": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 812649871,
+          "value": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@30700d8f"
+        },
+        {
+          "class": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse",
+          "kind": "req",
+          "name": "response",
+          "object_id": 877629273,
+          "value": "org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse@344f8f59"
+        },
+        {
+          "class": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain",
+          "kind": "req",
+          "name": "filterChain",
+          "object_id": 1900873652,
+          "value": "org.springframework.security.web.FilterChainProxy$VirtualFilterChain@714d07b4"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java",
+      "receiver": {
+        "class": "com.example.CourseSell.config.JwtAuthenticationFilter",
+        "object_id": 1891047080,
+        "value": "com.example.CourseSell.config.JwtAuthenticationFilter@70b716a8"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 2,
+      "lineno": 64,
+      "method_id": "extractUsername",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 3,
+      "lineno": 68,
+      "method_id": "extractClaim",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        },
+        {
+          "class": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5c6ec78",
+          "kind": "req",
+          "name": "claimsResolver",
+          "object_id": 1917247068,
+          "value": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5c6ec78@7246de5c"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00025265,
+      "event": "return",
+      "id": 4,
+      "parent_id": 3,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 451603829,
+        "value": "admin@example.com"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00025265,
+      "event": "return",
+      "id": 5,
+      "parent_id": 2,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 451603829,
+        "value": "admin@example.com"
+      },
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.repository.UserRepository",
+      "event": "call",
+      "id": 6,
+      "lineno": -1,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 451603829,
+          "value": "admin@example.com"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/repository/UserRepository.java",
+      "receiver": {
+        "class": "jdk.proxy2.$Proxy199",
+        "object_id": 1100579344,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@324255d5"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "event": "call",
+      "id": 7,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "select u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 where u1_0.email=?"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 8,
+      "parent_id": 7,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00042524,
+      "event": "return",
+      "id": 9,
+      "parent_id": 6,
+      "return_value": {
+        "class": "java.util.Optional",
+        "object_id": 2096353341,
+        "value": "< invalid >"
+      },
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 10,
+      "lineno": 97,
+      "method_id": "isTokenOfType",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        },
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "tokenType",
+          "object_id": 2028017635,
+          "value": "access"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.0001221,
+      "event": "return",
+      "id": 11,
+      "parent_id": 10,
+      "return_value": {
+        "class": "java.lang.Boolean",
+        "object_id": 36374091,
+        "value": "true"
+      },
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 12,
+      "lineno": 73,
+      "method_id": "isTokenValid",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        },
+        {
+          "class": "com.example.CourseSell.entity.User",
+          "kind": "req",
+          "name": "userDetails",
+          "object_id": 1732245329,
+          "value": "< invalid >"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 13,
+      "lineno": 64,
+      "method_id": "extractUsername",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 14,
+      "lineno": 68,
+      "method_id": "extractClaim",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        },
+        {
+          "class": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5c6ec78",
+          "kind": "req",
+          "name": "claimsResolver",
+          "object_id": 1917247068,
+          "value": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5c6ec78@7246de5c"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00010039,
+      "event": "return",
+      "id": 15,
+      "parent_id": 14,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 2042720689,
+        "value": "admin@example.com"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00010039,
+      "event": "return",
+      "id": 16,
+      "parent_id": 13,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 2042720689,
+        "value": "admin@example.com"
+      },
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+      "event": "call",
+      "id": 17,
+      "lineno": 68,
+      "method_id": "extractClaim",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "token",
+          "object_id": 1893348120,
+          "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ"
+        },
+        {
+          "class": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5cf0420",
+          "kind": "req",
+          "name": "claimsResolver",
+          "object_id": 1333593184,
+          "value": "com.example.CourseSell.service.implement.JwtServiceImpl$$Lambda/0x000001bbd5cf0420@4f7d0460"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.JwtServiceImpl",
+        "object_id": 347951675,
+        "value": "com.example.CourseSell.service.implement.JwtServiceImpl@14bd523b"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00011355,
+      "event": "return",
+      "id": 18,
+      "parent_id": 17,
+      "return_value": {
+        "class": "java.util.Date",
+        "object_id": 679511819,
+        "value": "Wed Nov 27 01:35:12 ICT 2024"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.0003144,
+      "event": "return",
+      "id": 19,
+      "parent_id": 12,
+      "return_value": {
+        "class": "java.lang.Boolean",
+        "object_id": 36374091,
+        "value": "true"
+      },
+      "thread_id": 52
+    },
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInVzZXJfdHlwZSI6IkFETUlOIiwidHlwZSI6ImFjY2VzcyIsImlkIjoiNTU2Nzc0MDgtYWJiNi0xMWVmLWE5YjQtZDhiYmMxMjVhZjk4IiwiaWF0IjoxNzMyNjQ1MjEyLCJleHAiOjE3MzI2NDYxMTJ9.fEmo5ZoSnh7YTEoQ9r15yCR4yy6-xXUP3fOgvvQAFwQ",
+          "content-length": "196",
+          "postman-token": "ab9a8b13-8a38-4587-81a0-f09886335f1e",
+          "host": "localhost:8080",
+          "content-type": "application/json",
+          "connection": "keep-alive",
+          "accept-encoding": "gzip, deflate, br",
+          "user-agent": "PostmanRuntime/7.43.0",
+          "accept": "*/*"
+        },
+        "normalized_path_info": "/api/v1/courses/{courseId}/approveCourse",
+        "path_info": "/api/v1/courses/e943d7a5-05cb-4d06-9794-556fb321d7b8/approveCourse",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 20,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.controller.CourseController",
+      "event": "call",
+      "id": 21,
+      "lineno": 77,
+      "method_id": "approveCourse",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "courseId",
+          "object_id": 361021060,
+          "value": "e943d7a5-05cb-4d06-9794-556fb321d7b8"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/controller/CourseController.java",
+      "receiver": {
+        "class": "com.example.CourseSell.controller.CourseController",
+        "object_id": 918692591,
+        "value": "com.example.CourseSell.controller.CourseController@36c222ef"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "defined_class": "com.example.CourseSell.service.implement.CourseServiceImpl",
+      "event": "call",
+      "id": 22,
+      "lineno": 200,
+      "method_id": "approveCourse",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "courseId",
+          "object_id": 361021060,
+          "value": "e943d7a5-05cb-4d06-9794-556fb321d7b8"
+        }
+      ],
+      "path": "src/main/java/com/example/CourseSell/service/implement/CourseServiceImpl.java",
+      "receiver": {
+        "class": "com.example.CourseSell.service.implement.CourseServiceImpl",
+        "object_id": 2137321584,
+        "value": "com.example.CourseSell.service.implement.CourseServiceImpl@7f64f070"
+      },
+      "static": false,
+      "thread_id": 52
+    },
+    {
+      "event": "call",
+      "id": 23,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "select c1_0.id,c1_0.created_at,c1_0.description,c1_0.is_approved,c1_0.price,c1_0.time_needed,c1_0.title,c1_0.update_at,u1_0.id,c2_0.id,c2_0.created_at,c2_0.total_price,c2_0.update_at,c2_0.student_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from courses c1_0 left join users u1_0 on u1_0.id=c1_0.instructor_id left join cart c2_0 on c2_0.id=u1_0.cart_id where c1_0.id=?"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00010048,
+      "event": "return",
+      "id": 24,
+      "parent_id": 23,
+      "thread_id": 52
+    },
+    {
+      "event": "call",
+      "id": 25,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "update courses set description=?,is_approved=?,price=?,time_needed=?,title=?,update_at=?,instructor_id=? where id=?"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 26,
+      "parent_id": 25,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00136398,
+      "event": "return",
+      "id": 27,
+      "parent_id": 22,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00136398,
+      "event": "return",
+      "id": 28,
+      "parent_id": 21,
+      "return_value": {
+        "class": "org.springframework.http.ResponseEntity",
+        "object_id": 1064320120,
+        "value": "<200 OK OK,ApiResponse(statusCode=200, message=Successfully, data=No contents),[]>"
+      },
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.00493393,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "X-Frame-Options": "DENY",
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+          "X-Content-Type-Options": "nosniff",
+          "Connection": "keep-alive",
+          "Vary": "Origin",
+          "Pragma": "no-cache",
+          "Expires": "0",
+          "X-XSS-Protection": "0",
+          "Date": "Tue, 26 Nov 2024 18:21:11 GMT",
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      },
+      "id": 29,
+      "parent_id": 20,
+      "thread_id": 52
+    },
+    {
+      "elapsed": 0.0061489,
+      "event": "return",
+      "id": 30,
+      "parent_id": 1,
+      "thread_id": 52
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /api/v1/courses/e943d7a5-05cb-4d06-9794-556fb321d7b8/approveCourse (200) - 01:21:11.215",
+    "app": "CourseSell",
+    "language": {
+      "name": "java",
+      "version": "21.0.3+7-LTS-152",
+      "engine": "Java HotSpot(TM) 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {},
+    "git": {
+      "repository": "https://github.com/Idol1023/CourseSell.git",
+      "branch": "feature/ecommerce-190",
+      "commit": "ea9100a02c00a4efc624bd2d32c12777b18051e3"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "findByEmail",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/repository/UserRepository.java:-1"
+                        }
+                      ],
+                      "name": "UserRepository",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "repository",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "approveCourse",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/CourseServiceImpl.java:200"
+                            }
+                          ],
+                          "name": "CourseServiceImpl",
+                          "type": "class"
+                        },
+                        {
+                          "children": [
+                            {
+                              "name": "extractClaim",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:68"
+                            },
+                            {
+                              "name": "extractUsername",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:64"
+                            },
+                            {
+                              "name": "isTokenValid",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:73"
+                            },
+                            {
+                              "name": "isTokenOfType",
+                              "type": "function",
+                              "static": false,
+                              "location": "src/main/java/com/example/CourseSell/service/implement/JwtServiceImpl.java:97"
+                            }
+                          ],
+                          "name": "JwtServiceImpl",
+                          "type": "class"
+                        }
+                      ],
+                      "name": "implement",
+                      "type": "package"
+                    }
+                  ],
+                  "name": "service",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "approveCourse",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/controller/CourseController.java:77"
+                        }
+                      ],
+                      "name": "CourseController",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "controller",
+                  "type": "package"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "doFilterInternal",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/example/CourseSell/config/JwtAuthenticationFilter.java:35"
+                        }
+                      ],
+                      "name": "JwtAuthenticationFilter",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "config",
+                  "type": "package"
+                }
+              ],
+              "name": "CourseSell",
+              "type": "package"
+            }
+          ],
+          "name": "example",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "select u1_0.id,u1_0.cart_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from users u1_0 where u1_0.email=?"
+        },
+        {
+          "type": "query",
+          "name": "select c1_0.id,c1_0.created_at,c1_0.description,c1_0.is_approved,c1_0.price,c1_0.time_needed,c1_0.title,c1_0.update_at,u1_0.id,c2_0.id,c2_0.created_at,c2_0.total_price,c2_0.update_at,c2_0.student_id,u1_0.created_at,u1_0.email,u1_0.full_name,u1_0.is_active,u1_0.password,u1_0.phone,u1_0.refresh_token,u1_0.update_at,u1_0.user_type from courses c1_0 left join users u1_0 on u1_0.id=c1_0.instructor_id left join cart c2_0 on c2_0.id=u1_0.cart_id where c1_0.id=?"
+        },
+        {
+          "type": "query",
+          "name": "update courses set description=?,is_approved=?,price=?,time_needed=?,title=?,update_at=?,instructor_id=? where id=?"
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/v1/courses/{courseId}/approveCourse"
+        }
+      ]
+    }
+  ]
+}
