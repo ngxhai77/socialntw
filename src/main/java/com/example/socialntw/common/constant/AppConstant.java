@@ -14,6 +14,6 @@ public class AppConstant {
     private static final String NAME_REGEX = "^[A-Za-z]+(([' -][A-Za-z ])?[A-Za-z]*)*$";
     public static final Pattern NAME_PATTERN = Pattern.compile(NAME_REGEX);
     public static final String ADMIN_PERMISSION = "hasRole('ADMIN')";
-    public static final String INSTRUCTOR_PERMISSION = "hasRole('INSTRUCTOR')";
-    public static final String STUDENT_PERMISSION = "hasRole('STUDENT')";
+    public static final String CREATOR_PERMISSION = "hasRole('CREATOR')";
+    public static final String USER_PERMISSION = "hasRole('USER')";
 }

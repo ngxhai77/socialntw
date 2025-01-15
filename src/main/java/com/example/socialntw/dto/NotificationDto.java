@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserUpdateDto {
-    private String email;
-    private String phone;
-    private String userName;
+public class NotificationDto {
+    private Integer userId;
+    private String message;
 }

@@ -9,8 +9,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserUpdateDto {
-    private String email;
-    private String phone;
-    private String userName;
+public class PostDto {
+    private Integer postId;
+    private String title;
+    private String content;
+    private String imageUrl;
+    private Integer userId;
+    private Integer areaId;
 }

@@ -42,13 +42,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto addUser(UserDto userDto) {
-        if (userDto.getPassword().trim().isEmpty() || userDto.getEmail().trim().isEmpty() || userDto.getFullName().isEmpty()) {
+        if (userDto.getPassword().trim().isEmpty() || userDto.getEmail().trim().isEmpty() || userDto.getUserName().isEmpty()) {
             throw new BadRequestException(FIELD_INVALID);
         }
         if (!validEmail(userDto.getEmail())) {
             throw new BadRequestException(EMAIL_INVALID);
         }
-        if (!validFullName(userDto.getFullName())) {
+        if (!validFullName(userDto.getUserName())) {
             throw new BadRequestException(NAME_INVALID);
         }
         if(!validPhoneNumber(userDto.getPhone())){
@@ -77,7 +77,7 @@ public class UserServiceImpl implements UserService {
         if (authorities.contains(new SimpleGrantedAuthority("ROLE_ADMIN"))) {
             List<User> user = userRepository.findAll();
             return UserMapper.toDtos(user);
-        } else if (authorities.contains(new SimpleGrantedAuthority("ROLE_INSTRUCTOR")) || authorities.contains(new SimpleGrantedAuthority("ROLE_STUDENT"))) {
+        } else if (authorities.contains(new SimpleGrantedAuthority("ROLE_CREATOR")) || authorities.contains(new SimpleGrantedAuthority("ROLE_USER"))) {
             List<User> user = userRepository.findByIsActiveTrue();
             return UserMapper.toDtos(user);
         } else {
@@ -94,8 +94,8 @@ public class UserServiceImpl implements UserService {
             User user = userRepository.findById(userId)
                     .orElseThrow(() -> new NotFoundException(USER_NOT_FOUND));
             return UserMapper.toDto(user);
-        } else if (authorities.contains(new SimpleGrantedAuthority("ROLE_INSTRUCTOR"))
-                || authorities.contains(new SimpleGrantedAuthority("ROLE_STUDENT"))) {
+        } else if (authorities.contains(new SimpleGrantedAuthority("ROLE_CREATOR"))
+                || authorities.contains(new SimpleGrantedAuthority("ROLE_USER"))) {
             User user = userRepository.findByIdAndIsActiveTrue(userId)
                     .orElseThrow(() -> new NotFoundException(USER_NOT_FOUND));
             return UserMapper.toDto(user);
@@ -126,10 +126,10 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public void updateUser(Integer userId, UserUpdateDto userUpdateDto) {
-        if (userUpdateDto.getEmail().isEmpty() || userUpdateDto.getFullName().isEmpty()) {
+        if (userUpdateDto.getEmail().isEmpty() || userUpdateDto.getUserName().isEmpty()) {
             throw new BadRequestException(FIELD_INVALID);
         }
-        if (!validFullName(userUpdateDto.getFullName())) {
+        if (!validFullName(userUpdateDto.getUserName())) {
             throw new BadRequestException(NAME_INVALID);
         }
         if (!validEmail(userUpdateDto.getEmail())) {
@@ -146,7 +146,7 @@ public class UserServiceImpl implements UserService {
                     throw new BadRequestException(USER_EXISTED);
                 }
             }
-            user.setUsername(userUpdateDto.getFullName());
+            user.setUsername(userUpdateDto.getUserName());
             user.setPhone(userUpdateDto.getPhone());
             user.setEmail(userUpdateDto.getEmail());
 

@@ -35,8 +35,8 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public UserDto registerNewUser(UserDto userDto) {
         if (userDto.getUserType() == null){
-            throw new BadRequestException(FIELD_INVALID);
-        }else if (userDto.getUserType() != UserType.STUDENT && userDto.getUserType() != UserType.INSTRUCTOR) {
+                userDto.setUserType(UserType.USER);
+        }else if (userDto.getUserType() != UserType.USER && userDto.getUserType() != UserType.CREATOR) {
             throw new BadRequestException(USER_TYPE_INVALID);
         }
         return userService.addUser(userDto);
@@ -63,7 +63,7 @@ public class AuthServiceImpl implements AuthService {
                 .id((user.getId()))
                 .email(user.getEmail())
                 .userType(user.getUserType())
-                .fullName(user.getUsername())
+                .userName(user.getUsername())
                 .phone(user.getPhone())
                 .build();
 

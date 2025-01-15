@@ -1,5 +1,6 @@
 package com.example.socialntw.dto;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,8 +10,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserUpdateDto {
-    private String email;
-    private String phone;
-    private String userName;
+public class ReportDto {
+
+    private Integer userId;
+    private Integer postId;
+    private Integer commentId;
+    private Integer areaId;
+    private String reason;
 }

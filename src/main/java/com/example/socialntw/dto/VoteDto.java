@@ -1,5 +1,6 @@
 package com.example.socialntw.dto;
 
+import com.example.socialntw.enums.VoteType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,8 +10,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserUpdateDto {
-    private String email;
-    private String phone;
-    private String userName;
+public class VoteDto {
+    private Integer postId;
+    private Integer commentId;
+    private VoteType voteType;
+
+    // Getters and Setters
 }

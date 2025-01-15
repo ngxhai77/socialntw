@@ -14,7 +14,7 @@ public class UserMapper {
         userDto.setPassword(user.getPasswordHash());
         userDto.setEmail(user.getEmail());
         userDto.setPhone(user.getPhone());
-        userDto.setFullName(user.getUsername());
+        userDto.setUserName(user.getUsername());
         userDto.setUserType(user.getUserType());
         return userDto;
     }
@@ -33,7 +33,7 @@ public class UserMapper {
         user.setPasswordHash(userDto.getPassword());
         user.setEmail(userDto.getEmail());
         user.setPhone(userDto.getPhone());
-        user.setUsername(userDto.getFullName());
+        user.setUsername(userDto.getUserName());
         user.setUserType(userDto.getUserType());
         return user;
     }
@@ -42,7 +42,7 @@ public class UserMapper {
         user.setPasswordHash(userDto.getPassword());
         user.setEmail(userDto.getEmail());
         user.setPhone(userDto.getPhone());
-        user.setUsername(userDto.getFullName());
+        user.setUsername(userDto.getUserName());
         user.setUserType(userDto.getUserType());
         return user;
     }

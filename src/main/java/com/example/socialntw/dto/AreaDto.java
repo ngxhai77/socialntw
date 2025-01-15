@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserUpdateDto {
-    private String email;
-    private String phone;
-    private String userName;
+public class AreaDto {
+    private Integer id;
+    private String name;
+    private String description;
+
 }
